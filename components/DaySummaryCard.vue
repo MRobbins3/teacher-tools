@@ -1,6 +1,7 @@
 <template>
     <v-card class="ma-2" elevation="3">
         <v-card-title>
+            <!--    <NuxtLink to="/DayView">Day 1</NuxtLink>-->
             {{ day?.title ?? ''}}
         </v-card-title>
         <v-card-text>

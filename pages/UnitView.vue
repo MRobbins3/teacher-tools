@@ -1,7 +1,6 @@
 <template>
     <h2> Unit View </h2>
     <h2> List of Days in the Unit </h2>
-<!--    <NuxtLink to="/DayView">Day 1</NuxtLink>-->
     <ul ref="parentRef" class="no-bullets">
         <li
             v-for='day in days'

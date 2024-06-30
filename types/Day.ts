@@ -1,5 +1,5 @@
 export interface Day {
-    title?: String
-    summary?: String
+    title?: string
+    summary?: string
     duration?: number
 }
