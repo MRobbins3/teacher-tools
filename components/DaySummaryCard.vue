@@ -1,16 +1,22 @@
 <template>
     <v-card class="ma-2" elevation="3">
         <v-card-title>
-            {{ title }}
+            {{ day?.title ?? ''}}
         </v-card-title>
+        <v-card-text>
+            {{ day?.summary ?? '' }}
+        </v-card-text>
     </v-card>
 </template>
 <script setup lang="ts">
+import type { Day } from '@/types/Day';
+
 interface Props {
-    title?: string | null
+    day?: Day | null
 }
 
 const props = withDefaults(defineProps<Props>(), {
-    title: 'Day Summary'
+    day: null
 });
+
 </script>
