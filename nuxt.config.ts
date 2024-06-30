@@ -6,5 +6,13 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ["@nuxt/eslint"]
+  modules: ['@nuxt/eslint', "vuetify-nuxt-module"],
+  vuetify: {
+    moduleOptions: {
+      /* module specific options */
+    },
+    vuetifyOptions: {
+      /* vuetify options */
+    }
+  }
 })
