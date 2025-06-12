@@ -40,3 +40,17 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Feature requests
+- don't really need the daily view :(
+- https://classroomscreen.com/ is the widget thing he talked about
+- Task management / organization
+  - "There's so much everywhere all at once"
+  - "Very overwhelming"
+  - Not sure what Canvas will look like (more or less)
+  - Google Drive is the main driver (but it's not very well organized)
+    - There is a BitE shared drive
+- Absent log (Google Doc?)
+  - Taken from last year and put into new one
+  - Can it be automatically done? 
+    - Issue is that pacing is different every year, it's not accurate to just copy from yty
