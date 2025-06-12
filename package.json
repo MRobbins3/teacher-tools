@@ -12,11 +12,13 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@formkit/drag-and-drop": "^0.1.4",
-    "@nuxt/eslint": "^0.3.13",
-    "nuxt": "^3.12.1",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.3",
-    "vuetify-nuxt-module": "^0.14.1"
+    "@formkit/drag-and-drop": "^0.5.3",
+    "nuxt": "^3.17.5",
+    "vue": "^3.5.16",
+    "vue-router": "^4.5.1",
+    "vuetify-nuxt-module": "^0.18.7"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.4.1"
   }
 }
