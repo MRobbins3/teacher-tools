@@ -13,7 +13,9 @@ export default defineNuxtConfig({
       /* module specific options */
     },
     vuetifyOptions: {
-      /* vuetify options */
+      icons: {
+        defaultSet: 'fa',
+      }
     }
   }
 })

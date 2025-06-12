@@ -1,5 +1,6 @@
 <template>
     <v-navigation-drawer
+        class="bg-deep-purple-darken-1"
         permanent
         touchless
         :rail="shrinkSidebar"
@@ -12,23 +13,21 @@
         <v-btn
             v-if="!shouldExpandOnHover"
             size="x-small"
-            class="handlebar"
+            class="bg-deep-purple-darken-1"
             @click.stop="toggleSidebar"
             icon
             :style="{top:'0px', transform:`translate(${isCollapsed ? '120' : '740'}%, 300%)`, 'z-index': 1111, position: 'fixed'}"
         >
             <v-icon
-                size="24"
                 v-if="isCollapsed"
-            >
-                fa fa-circle-chevron-right
-            </v-icon>
-            <v-icon
                 size="24"
+                icon="fa fa-circle-chevron-right"
+            />
+            <v-icon
                 v-else
-            >
-                fa fa-circle-chevron-left
-            </v-icon>
+                size="24"
+                icon="fa fa-circle-chevron-left"
+            />
         </v-btn>
     </div>
     </v-navigation-drawer>
@@ -78,10 +77,6 @@ const shouldExpandOnHover = computed(() => {
 
 </script>
 <style lang="scss" scoped>
-
-.handlebar {
-    background-color: rebeccapurple;
-}
 
 .v-navigation-drawer--mini-variant, .v-navigation-drawer {
     overflow: visible !important;

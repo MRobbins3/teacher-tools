@@ -1,5 +1,6 @@
 <template>
     <v-app-bar
+        class="bg-deep-purple-darken-1"
         order="1"
         density="compact"
     >
@@ -10,4 +11,5 @@
 </template>
 <script setup lang="ts">
 
+import { deepPurple } from 'vuetify/util/colors';
 </script>
