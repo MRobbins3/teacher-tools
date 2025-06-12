@@ -1,7 +1,6 @@
 <template>
     <v-navigation-drawer
         permanent
-        theme="dark"
         touchless
         :rail="shrinkSidebar"
         :model-value="true"
@@ -43,10 +42,10 @@ const shrinkSidebar = computed(() => {
     return !isManuallyExpanded.value && (!isBeingHovered.value || getIsSmallScreen.value);
 });
 
-function mouseover () {
-    if (debounce.value || !shouldExpandOnHover.value) return;
-    isBeingHovered.value = true;
-}
+const display = useDisplay();
+const getIsSmallScreen = computed((): boolean => {
+    return display.smAndDown.value;
+});
 
 function collapseSidebar () {
     debounce.value = true;
@@ -68,14 +67,15 @@ function toggleSidebar () {
     else collapseSidebar();
 }
 
+function mouseover () {
+    if (debounce.value || !shouldExpandOnHover.value) return;
+    isBeingHovered.value = true;
+}
+
 const shouldExpandOnHover = computed(() => {
     return !getIsSmallScreen.value && !isManuallyExpanded.value;
 });
 
-const display = useDisplay();
-const getIsSmallScreen = computed((): boolean => {
-    return display.smAndDown.value;
-});
 </script>
 <style lang="scss" scoped>
 
