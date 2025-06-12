@@ -1,5 +1,5 @@
-# plc-coordination-site
-A tool to help teaching PLCs better coordinate
+# teacher-tools
+A collection of tools designed to make day-to-day teaching just a little bit easier. 
 
 # Nuxt 3 Minimal Starter
 
